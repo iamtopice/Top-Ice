@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    min-height: 8vh;
+    background-color: teal;
+}
+.list-items {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    list-style: none;
+    padding: 0;
+}
+.list-items li {
+    list-style-type: none;
+    padding: 20px;
+    margin: 10px;
+    height: 100%;
+    width: 500px;
+}
+.list-items li a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+.logo { 
+    display: flex;
+    width: 300px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    font-family: 'Bungee', cursive;
+}
+.logo a {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+.active {
+    background-color: #4caf50;
+}
+.list-items li a:hover:not(.active) {
+    background-color: lightseagreen;
+}
+.list-items li a .active {
+    background-color: #4caf50;
+}
+/* Ending Navigation Bar Here */
+
+/* Starting Body Content Here */
+.body-container {
+    color: whitesmoke;
+    text-shadow: 0px 0px 5px black;
+    background-image: url(images/Bitcoin.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    padding-top: 120px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.body-container .motto {
+    font-weight: 900;
+    font-size: 40px;
+}
+#invite {
+    color: rgb(138, 167, 167);
+    text-shadow: 0 0 30px white;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.invitation {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#invite-text {
+    color: whitesmoke;
+    font-family: inherit;
+    font-size: 40px;
+}
+#get-started {
+    color: white;
+}
+.get-started {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    background-color: #4E391A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #ccc;
+    transition: box-shadow 300ms, color 300ms;
+}
+.get-started:hover {
+    color: whitesmoke;
+    box-shadow: 8px 6px 0 #F8E098;
+}
+/* Ending Body Content Here */
+
+/* Starting Get-Started Page Here */
+.wrapper {
+    height: max-content;
+    padding: 30px;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.wrapper-nav {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 500px;
+}
+.breadcrumb {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+}
+.breadcrumb li span{
+    color: gray;
+}
+.breadcrumb li a {
+    color: black;
+    transition: color 300ms;
+}
+.breadcrumb li .unique {
+    color: #222222;
+}
+.breadcrumb li a:hover {
+    color: rgb(176, 115, 0);
+}
+/* BreakPoint */
+form {
+    border: 1px solid #333;
+    padding: 20px;
+    max-width: 400px;
+    height: max-content;
+    margin: 0 auto;
+    border: 2px solid #222222;
+    border-radius: 5px;
+}
+.input-group {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+}
+label {
+    width: 100px;
+}
+input, select, textarea {
+    flex: 1;
+    padding: 3px 5px;
+}
+.submit-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.submit-btn {
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submit-btn a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.active-get-started {
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.back-to-home {
+    text-align: center;
+    margin: 5px;
+    padding: 150px 10px 0 10px;
+}
